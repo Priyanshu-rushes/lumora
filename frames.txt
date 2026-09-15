@@ -1,0 +1,13 @@
+file '/mnt/data/assets/images/solo.jpg'
+duration 3
+file '/mnt/data/assets/images/artoria.jpg'
+duration 3
+file '/mnt/data/assets/images/altria.jpg'
+duration 3
+file '/mnt/data/assets/images/saber.jpg'
+duration 3
+file '/mnt/data/assets/images/maki-rukia.jpg'
+duration 3
+file '/mnt/data/assets/images/solo-dark.jpg'
+duration 3
+file '/mnt/data/assets/images/solo-dark.jpg'
