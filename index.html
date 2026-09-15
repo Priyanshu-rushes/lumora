@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lumora — Four Worlds. One Channel.</title>
+
+<meta name="description"
+content="Lumora is a fictional streaming channel for fantasy cartoons — Emberfall Chronicles, The Glasswood, Starling & the Nine Realms, and Tidecaller.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     AMBIENT BACKGROUND
+========================================================= -->
+
+<div class="bg-blobs" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+  <div class="grain"></div>
+</div>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav class="nav" id="nav">
+
+  <div class="nav-inner">
+
+    <a href="#" class="brand">
+
+      <svg class="brand-mark"
+           viewBox="0 0 40 40"
+           width="30"
+           height="30"
+           aria-hidden="true">
+
+        <defs>
+          <linearGradient id="brandGrad"
+                          x1="0"
+                          y1="0"
+                          x2="1"
+                          y2="1">
+
+            <stop offset="0%" stop-color="#9B5DE5"/>
+            <stop offset="100%" stop-color="#E8B85C"/>
+
+          </linearGradient>
+        </defs>
+
+        <circle cx="20"
+                cy="20"
+                r="17"
+                fill="none"
+                stroke="url(#brandGrad)"
+                stroke-width="2.5"/>
+
+        <path d="M24 8 A14 14 0 1 0 24 32 A11 11 0 1 1 24 8 Z"
+              fill="url(#brandGrad)"/>
+
+      </svg>
+
+      <span>Lumora</span>
+
+    </a>
+
+
+    <ul class="nav-links" id="navLinks">
+
+      <li>
+        <a href="#shows">Shows</a>
+      </li>
+
+      <li>
+        <a href="#characters">Characters</a>
+      </li>
+
+      <li>
+        <a href="#episodes">Episodes</a>
+      </li>
+
+      <li>
+        <a href="#comments">Comments</a>
+      </li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+    </ul>
+
+
+    <div class="nav-actions">
+
+      <button class="btn btn-ghost btn-small" id="navWatchBtn">
+        <i class="fa-solid fa-play"></i>
+        Watch now
+      </button>
+
+      <button class="nav-toggle"
+              id="navToggle"
+              aria-label="Toggle menu"
+              aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="hero">
+
+  <div class="hero-inner">
+
+    <div class="hero-copy">
+
+      <p class="pill pill-accent">
+        <i class="fa-solid fa-sparkles"></i>
+        New episodes every Friday
+      </p>
+
+      <h1>
+        Emberfall<br>
+        Chronicles
+      </h1>
+
+      <p class="hero-desc">
+        A dragon-rider with a grudge against fire. A village that only
+        exists at dusk. Season 2 of Lumora's flagship saga is streaming
+        now — start from episode one, or jump right into the fight.
+      </p>
+
+      <div class="chip-row">
+
+        <span class="chip">
+          Fantasy adventure
+        </span>
+
+        <span class="chip">
+          Season 2
+        </span>
+
+        <span class="chip">
+          All ages
+        </span>
+
+      </div>
+
+
+      <div class="hero-actions">
+
+        <button class="btn btn-primary"
+                data-open-modal
+                data-modal-title="Emberfall Chronicles — Ep. 12"
+                data-modal-sub="The Final Ember · 24 min">
+
+          <i class="fa-solid fa-play"></i>
+          Watch now
+
+        </button>
+
+
+        <a href="#shows" class="btn btn-ghost">
+          Explore shows
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+      <div class="liquid-screen">
+
+        <svg viewBox="0 0 400 480"
+             class="scene-art"
+             aria-hidden="true">
+
+          <defs>
+
+            <radialGradient id="skyGrad"
+                            cx="50%"
+                            cy="30%"
+                            r="80%">
+
+              <stop offset="0%" stop-color="#3A2160"/>
+              <stop offset="100%" stop-color="#0B0714"/>
+
+            </radialGradient>
+
+
+            <linearGradient id="dragonGrad"
+                            x1="0"
+                            y1="0"
+                            x2="1"
+                            y2="1">
+
+              <stop offset="0%" stop-color="#E8B85C"/>
+              <stop offset="100%" stop-color="#C9622E"/>
+
+            </linearGradient>
+
+
+            <linearGradient id="hillGrad"
+                            x1="0"
+                            y1="0"
+                            x2="0"
+                            y2="1">
+
+              <stop offset="0%" stop-color="#4B2A78"/>
+              <stop offset="100%" stop-color="#1B0E32"/>
+
+            </linearGradient>
+
+          </defs>
+
+
+          <rect width="400"
+                height="480"
+                fill="url(#skyGrad)"/>
+
+
+          <circle cx="300"
+                  cy="90"
+                  r="46"
+                  fill="#E8B85C"
+                  opacity="0.9"/>
+
+
+          <circle cx="300"
+                  cy="90"
+                  r="46"
+                  fill="#0B0714"
+                  opacity="0.25"/>
+
+
+          <path d="M0 300 Q100 250 200 300 T400 290 V480 H0 Z"
+                fill="url(#hillGrad)"/>
+
+
+          <path d="M0 360 Q120 320 220 360 T400 350 V480 H0 Z"
+                fill="#150C29"/>
+
+
+          <!-- Dragon -->
+
+          <g transform="translate(120,190) rotate(-8)">
+
+            <path d="M0 40 C20 0 70 -10 110 10
+                     C130 20 150 15 170 0
+                     C155 25 130 35 110 32
+                     C90 55 40 65 10 55
+                     C22 48 30 40 30 30
+                     C15 40 5 45 0 40 Z"
+                  fill="url(#dragonGrad)"/>
+
+            <path d="M60 5 C75 -18 105 -22 125 -8
+                     C110 -6 95 2 88 14 Z"
+                  fill="url(#dragonGrad)"/>
+
+          </g>
+
+
+          <circle class="twinkle"
+                  cx="60"
+                  cy="60"
+                  r="2"/>
+
+          <circle class="twinkle"
+                  cx="340"
+                  cy="180"
+                  r="2.4"/>
+
+          <circle class="twinkle"
+                  cx="90"
+                  cy="140"
+                  r="1.6"/>
+
+          <circle class="twinkle"
+                  cx="230"
+                  cy="50"
+                  r="1.8"/>
+
+        </svg>
+
+
+        <div class="screen-chip">
+
+          <i class="fa-solid fa-circle-play"></i>
+
+          <div>
+
+            <strong>
+              Ep. 12 — The Final Ember
+            </strong>
+
+            <span>
+              24 min · Season 2
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- =========================================================
+     SHOWS
+========================================================= -->
+
+<section id="shows" class="section">
+
+  <div class="section-head">
+
+    <h2>
+      Four worlds. One channel.
+    </h2>
+
+    <p>
+      Every Lumora original has its own realm, cast, and rules of magic.
+      Pick a world to see what's inside.
+    </p>
+
+  </div>
+
+
+  <div class="show-switcher">
+
+    <div class="show-tabs"
+         role="tablist"
+         id="showTabs">
+
+      <button class="show-tab active"
+              role="tab"
+              aria-selected="true"
+              data-show="emberfall">
+
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        Emberfall Chronicles
+
+      </button>
+
+
+      <button class="show-tab"
+              role="tab"
+              aria-selected="false"
+              data-show="glasswood">
+
+        <i class="fa-solid fa-leaf"></i>
+        The Glasswood
+
+      </button>
+
+
+      <button class="show-tab"
+              role="tab"
+              aria-selected="false"
+              data-show="starling">
+
+        <i class="fa-solid fa-star"></i>
+        Starling &amp; the Nine Realms
+
+      </button>
+
+
+      <button class="show-tab"
+              role="tab"
+              aria-selected="false"
+              data-show="tidecaller">
+
+        <i class="fa-solid fa-water"></i>
+        Tidecaller
+
+      </button>
+
+    </div>
+
+
+    <div class="show-panel" id="showPanel">
+      <!-- Filled by JavaScript -->
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     VISUAL ARCHIVE / IMAGE GALLERY
+     
+     PUT YOUR IMAGES IN:
+     
+     images/
+       solo-leveling.jpg
+       fate.jpg
+       altria.jpg
+       solo-leveling-dark.jpg
+========================================================= -->
+
+<section id="gallery" class="section section-alt">
+
+  <div class="section-head">
+
+    <span class="pill pill-accent">
+      Visual Archive
+    </span>
+
+    <h2>
+      Worlds Beyond the Screen
+    </h2>
+
+    <p>
+      Explore the characters, realms and legends of Lumora.
+    </p>
+
+  </div>
+
+
+  <div class="image-gallery">
+
+
+    <!-- IMAGE 1 -->
+
+    <article class="image-card featured">
+
+      <img src="assets/images/solo.jpg" alt="Solo Leveling artwork">
+
+           alt="Solo Leveling artwork"
+           loading="lazy">
+
+      <div class="image-card-content">
+
+        <span class="pill">
+          Solo Leveling
+        </span>
+
+        <h3>
+          Arise
+        </h3>
+
+        <p>
+          The Shadow Monarch awakens.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- IMAGE 2 -->
+
+    <article class="image-card">
+
+      <img src="assets/images/artoria.jpg"
+           alt="Fate Grand Order artwork"
+           loading="lazy">
+
+      <div class="image-card-content">
+
+        <span class="pill">
+          Fate/Grand Order
+        </span>
+
+        <h3>
+          Artoria
+        </h3>
+
+        <p>
+          The legendary King of Knights.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- IMAGE 3 -->
+
+    <article class="image-card">
+
+      <img src="assets/images/altria.jpg"
+           alt="Altria Pendragon artwork"
+           loading="lazy">
+
+      <div class="image-card-content">
+
+        <span class="pill">
+          Saber
+        </span>
+
+        <h3>
+          Excalibur
+        </h3>
+
+        <p>
+          Legendary King of Britain.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- IMAGE 4 -->
+
+    <article class="image-card">
+
+      <img src="assets/images/solo-dark.jpg"
+           alt="Dark Solo Leveling artwork"
+           loading="lazy">
+
+      <div class="image-card-content">
+
+        <span class="pill">
+          Shadow Realm
+        </span>
+
+        <h3>
+          Monarch
+        </h3>
+
+        <p>
+          A kingdom forged in darkness.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- IMAGE 5 -->
+
+    <article class="image-card">
+
+      <img src="assets/images/saber.jpg"
+           alt="Saber artwork"
+           loading="lazy">
+
+      <div class="image-card-content">
+        <span class="pill">Fate</span>
+        <h3>Saber</h3>
+        <p>A legendary knight beneath a golden sky.</p>
+      </div>
+
+    </article>
+
+
+    <!-- IMAGE 6 -->
+
+    <article class="image-card">
+
+      <img src="assets/images/maki-rukia.jpg"
+           alt="Anime character artwork"
+           loading="lazy">
+
+      <div class="image-card-content">
+        <span class="pill">Peak Vibes</span>
+        <h3>Different Worlds</h3>
+        <p>Strength, discipline and beauty beyond borders.</p>
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CHARACTERS
+========================================================= -->
+
+<section id="characters" class="section section-alt">
+
+  <div class="section-head">
+
+    <h2>
+      Meet the realmwalkers
+    </h2>
+
+    <p>
+      Flip a card, or just hover — everyone in Lumora is hiding
+      something interesting.
+    </p>
+
+  </div>
+
+
+  <div class="char-grid">
+
+
+    <!-- CHARACTER 1 -->
+
+    <article class="char-card"
+             tabindex="0"
+             style="--card-a:#E8B85C; --card-b:#C9622E;">
+
+      <div class="char-face">
+
+        <div class="char-avatar">
+
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+
+            <circle cx="50"
+                    cy="50"
+                    r="48"
+                    fill="url(#g1)"/>
+
+            <defs>
+
+              <linearGradient id="g1"
+                              x1="0"
+                              y1="0"
+                              x2="1"
+                              y2="1">
+
+                <stop offset="0%" stop-color="#E8B85C"/>
+                <stop offset="100%" stop-color="#C9622E"/>
+
+              </linearGradient>
+
+            </defs>
+
+            <path d="M30 60 Q50 30 70 60 Q50 75 30 60Z"
+                  fill="#0B0714"
+                  opacity="0.35"/>
+
+          </svg>
+
+        </div>
+
+
+        <h3>
+          Ember Drak
+        </h3>
+
+        <p class="char-role">
+          Dragon-rider · Emberfall Chronicles
+        </p>
+
+      </div>
+
+
+      <div class="char-back">
+
+        <p>
+          <strong>Signature trait:</strong>
+          Can speak to any flame, from a matchstick to a wildfire.
+        </p>
+
+        <p class="char-quote">
+          "Fire doesn't forgive. Neither do I, but I'm working on it."
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- CHARACTER 2 -->
+
+    <article class="char-card"
+             tabindex="0"
+             style="--card-a:#7BC9A6; --card-b:#2E6B52;">
+
+      <div class="char-face">
+
+        <div class="char-avatar">
+
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+
+            <circle cx="50"
+                    cy="50"
+                    r="48"
+                    fill="url(#g2)"/>
+
+            <defs>
+
+              <linearGradient id="g2"
+                              x1="0"
+                              y1="0"
+                              x2="1"
+                              y2="1">
+
+                <stop offset="0%" stop-color="#7BC9A6"/>
+                <stop offset="100%" stop-color="#2E6B52"/>
+
+              </linearGradient>
+
+            </defs>
+
+            <path d="M35 40 q15 -20 30 0 q-5 25 -30 20Z"
+                  fill="#0B0714"
+                  opacity="0.3"/>
+
+          </svg>
+
+        </div>
+
+
+        <h3>
+          Moss
+        </h3>
+
+        <p class="char-role">
+          Forest golem guide · The Glasswood
+        </p>
+
+      </div>
+
+
+      <div class="char-back">
+
+        <p>
+          <strong>Signature trait:</strong>
+          Grows a new flower for every kindness they witness.
+        </p>
+
+        <p class="char-quote">
+          "Lost things aren't lost. They're just resting somewhere new."
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- CHARACTER 3 -->
+
+    <article class="char-card"
+             tabindex="0"
+             style="--card-a:#9B5DE5; --card-b:#4B2A78;">
+
+      <div class="char-face">
+
+        <div class="char-avatar">
+
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+
+            <circle cx="50"
+                    cy="50"
+                    r="48"
+                    fill="url(#g3)"/>
+
+            <defs>
+
+              <linearGradient id="g3"
+                              x1="0"
+                              y1="0"
+                              x2="1"
+                              y2="1">
+
+                <stop offset="0%" stop-color="#9B5DE5"/>
+                <stop offset="100%" stop-color="#4B2A78"/>
+
+              </linearGradient>
+
+            </defs>
+
+            <path d="M50 25 L58 45 L50 65 L42 45 Z"
+                  fill="#F4EFFB"
+                  opacity="0.55"/>
+
+          </svg>
+
+        </div>
+
+
+        <h3>
+          Starling Vale
+        </h3>
+
+        <p class="char-role">
+          Realm-hopper · Starling &amp; the Nine Realms
+        </p>
+
+      </div>
+
+
+      <div class="char-back">
+
+        <p>
+          <strong>Signature trait:</strong>
+          Carries a compass that points toward courage, not north.
+        </p>
+
+        <p class="char-quote">
+          "Nine doors. Nine chances to get it right."
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- CHARACTER 4 -->
+
+    <article class="char-card"
+             tabindex="0"
+             style="--card-a:#E86B9B; --card-b:#6B2A54;">
+
+      <div class="char-face">
+
+        <div class="char-avatar">
+
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+
+            <circle cx="50"
+                    cy="50"
+                    r="48"
+                    fill="url(#g4)"/>
+
+            <defs>
+
+              <linearGradient id="g4"
+                              x1="0"
+                              y1="0"
+                              x2="1"
+                              y2="1">
+
+                <stop offset="0%" stop-color="#E86B9B"/>
+                <stop offset="100%" stop-color="#6B2A54"/>
+
+              </linearGradient>
+
+            </defs>
+
+            <path d="M30 55 Q50 30 70 55
+                     Q60 65 50 55
+                     Q40 65 30 55Z"
+                  fill="#0B0714"
+                  opacity="0.3"/>
+
+          </svg>
+
+        </div>
+
+
+        <h3>
+          Nyx
+        </h3>
+
+        <p class="char-role">
+          Fox-spirit companion · Starling &amp; the Nine Realms
+        </p>
+
+      </div>
+
+
+      <div class="char-back">
+
+        <p>
+          <strong>Signature trait:</strong>
+          Shifts shape a little more with every phase of the moon.
+        </p>
+
+        <p class="char-quote">
+          "Tonight I'm mostly fox. Ask again tomorrow."
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- CHARACTER 5 -->
+
+    <article class="char-card"
+             tabindex="0"
+             style="--card-a:#34D9C0; --card-b:#1B6E63;">
+
+      <div class="char-face">
+
+        <div class="char-avatar">
+
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+
+            <circle cx="50"
+                    cy="50"
+                    r="48"
+                    fill="url(#g5)"/>
+
+            <defs>
+
+              <linearGradient id="g5"
+                              x1="0"
+                              y1="0"
+                              x2="1"
+                              y2="1">
+
+                <stop offset="0%" stop-color="#34D9C0"/>
+                <stop offset="100%" stop-color="#1B6E63"/>
+
+              </linearGradient>
+
+            </defs>
+
+            <path d="M25 55 Q40 40 50 55
+                     Q60 40 75 55
+                     Q60 50 50 62
+                     Q40 50 25 55Z"
+                  fill="#0B0714"
+                  opacity="0.3"/>
+
+          </svg>
+
+        </div>
+
+
+        <h3>
+          Captain Wren
+        </h3>
+
+        <p class="char-role">
+          Coral-ship captain · Tidecaller
+        </p>
+
+      </div>
+
+
+      <div class="char-back">
+
+        <p>
+          <strong>Signature trait:</strong>
+          Reads the tide the way other people read a story.
+        </p>
+
+        <p class="char-quote">
+          "The Salt Divide doesn't care who you are. Steer anyway."
+        </p>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EPISODES
+========================================================= -->
+
+<section id="episodes" class="section">
+
+  <div class="section-head">
+
+    <h2>
+      Now streaming
+    </h2>
+
+    <p>
+      Fresh episodes from every world, sorted by what dropped most recently.
+    </p>
+
+  </div>
+
+
+  <div class="filter-row" id="episodeFilters">
+
+    <button class="filter-chip active"
+            data-filter="all">
+      All shows
+    </button>
+
+    <button class="filter-chip"
+            data-filter="emberfall">
+      Emberfall Chronicles
+    </button>
+
+    <button class="filter-chip"
+            data-filter="glasswood">
+      The Glasswood
+    </button>
+
+    <button class="filter-chip"
+            data-filter="starling">
+      Starling &amp; the Nine Realms
+    </button>
+
+    <button class="filter-chip"
+            data-filter="tidecaller">
+      Tidecaller
+    </button>
+
+  </div>
+
+
+  <div class="episode-grid" id="episodeGrid">
+
+
+    <!-- EMBERFALL EPISODE 12 -->
+
+    <article class="ep-card" data-show="emberfall">
+
+      <button class="ep-thumb thumb-ember"
+              data-open-modal
+              data-modal-title="Emberfall Chronicles — Ep. 12"
+              data-modal-sub="The Final Ember · 24 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          Emberfall Chronicles
+        </span>
+
+        <h4>
+          Ep. 12 — The Final Ember
+        </h4>
+
+        <div class="ep-meta">
+
+          <span>24 min</span>
+
+          <span class="dot-sep"></span>
+
+          <span>New</span>
+
+        </div>
+
+        <div class="progress">
+          <i style="width:70%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- EMBERFALL EPISODE 11 -->
+
+    <article class="ep-card" data-show="emberfall">
+
+      <button class="ep-thumb thumb-ember"
+              data-open-modal
+              data-modal-title="Emberfall Chronicles — Ep. 11"
+              data-modal-sub="Ashlands Divide · 23 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          Emberfall Chronicles
+        </span>
+
+        <h4>
+          Ep. 11 — Ashlands Divide
+        </h4>
+
+        <div class="ep-meta">
+          <span>23 min</span>
+        </div>
+
+        <div class="progress">
+          <i style="width:100%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- GLASSWOOD EPISODE 6 -->
+
+    <article class="ep-card" data-show="glasswood">
+
+      <button class="ep-thumb thumb-glass"
+              data-open-modal
+              data-modal-title="The Glasswood — Ep. 6"
+              data-modal-sub="What Moss Remembers · 22 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          The Glasswood
+        </span>
+
+        <h4>
+          Ep. 6 — What Moss Remembers
+        </h4>
+
+        <div class="ep-meta">
+
+          <span>22 min</span>
+
+          <span class="dot-sep"></span>
+
+          <span>New</span>
+
+        </div>
+
+        <div class="progress">
+          <i style="width:20%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- GLASSWOOD EPISODE 5 -->
+
+    <article class="ep-card" data-show="glasswood">
+
+      <button class="ep-thumb thumb-glass"
+              data-open-modal
+              data-modal-title="The Glasswood — Ep. 5"
+              data-modal-sub="The Lantern Path · 21 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          The Glasswood
+        </span>
+
+        <h4>
+          Ep. 5 — The Lantern Path
+        </h4>
+
+        <div class="ep-meta">
+          <span>21 min</span>
+        </div>
+
+        <div class="progress">
+          <i style="width:100%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- STARLING EPISODE 20 -->
+
+    <article class="ep-card" data-show="starling">
+
+      <button class="ep-thumb thumb-star"
+              data-open-modal
+              data-modal-title="Starling & the Nine Realms — Ep. 20"
+              data-modal-sub="The Ninth Door · 25 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          Starling &amp; the Nine Realms
+        </span>
+
+        <h4>
+          Ep. 20 — The Ninth Door
+        </h4>
+
+        <div class="ep-meta">
+
+          <span>25 min</span>
+
+          <span class="dot-sep"></span>
+
+          <span>New</span>
+
+        </div>
+
+        <div class="progress">
+          <i style="width:45%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- STARLING EPISODE 21 -->
+
+    <article class="ep-card" data-show="starling">
+
+      <button class="ep-thumb thumb-star"
+              data-open-modal
+              data-modal-title="Starling & the Nine Realms — Ep. 21"
+              data-modal-sub="Nyx's Choice · 24 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          Starling &amp; the Nine Realms
+        </span>
+
+        <h4>
+          Ep. 21 — Nyx's Choice
+        </h4>
+
+        <div class="ep-meta">
+          <span>24 min</span>
+        </div>
+
+        <div class="progress">
+          <i style="width:0%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- TIDECALLER EPISODE 3 -->
+
+    <article class="ep-card" data-show="tidecaller">
+
+      <button class="ep-thumb thumb-tide"
+              data-open-modal
+              data-modal-title="Tidecaller — Ep. 3"
+              data-modal-sub="The Salt Divide · 22 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          Tidecaller
+        </span>
+
+        <h4>
+          Ep. 3 — The Salt Divide
+        </h4>
+
+        <div class="ep-meta">
+          <span>22 min</span>
+        </div>
+
+        <div class="progress">
+          <i style="width:100%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- TIDECALLER EPISODE 4 -->
+
+    <article class="ep-card" data-show="tidecaller">
+
+      <button class="ep-thumb thumb-tide"
+              data-open-modal
+              data-modal-title="Tidecaller — Ep. 4"
+              data-modal-sub="Coral and Compass · 23 min">
+
+        <span class="ep-art" aria-hidden="true"></span>
+
+        <i class="fa-solid fa-play"></i>
+
+      </button>
+
+
+      <div class="ep-info">
+
+        <span class="ep-tag">
+          Tidecaller
+        </span>
+
+        <h4>
+          Ep. 4 — Coral and Compass
+        </h4>
+
+        <div class="ep-meta">
+
+          <span>23 min</span>
+
+          <span class="dot-sep"></span>
+
+          <span>New</span>
+
+        </div>
+
+        <div class="progress">
+          <i style="width:5%"></i>
+        </div>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about" class="section about">
+
+  <div class="about-copy">
+
+    <h2>
+      A channel built like a storybook you can step into
+    </h2>
+
+    <p>
+      Lumora started as four sketchbooks and a shared question:
+      what if every fantasy world got to keep its own weather,
+      its own rules of magic, and its own reasons to come back?
+      Four years later, it's a channel — no crossovers, no shared
+      universe, just four worlds that happen to live behind the
+      same glowing screen.
+    </p>
+
+    <p>
+      Every episode is written to be watched together, rewatched
+      alone, and argued about at the dinner table.
+    </p>
+
+  </div>
+
+
+  <div class="about-stats">
+
+    <div class="stat-card">
+      <strong>4</strong>
+      <span>original worlds</span>
+    </div>
+
+    <div class="stat-card">
+      <strong>88</strong>
+      <span>episodes streaming</span>
+    </div>
+
+    <div class="stat-card">
+      <strong>All ages</strong>
+      <span>rated, made for watching together</span>
+    </div>
+
+    <div class="stat-card">
+      <strong>Weekly</strong>
+      <span>new episode drops</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMMENTS
+========================================================= -->
+
+<section id="comments" class="comments">
+
+  <div class="comments-head">
+
+    <h2>
+      What viewers are saying
+    </h2>
+
+    <span class="comments-count" id="commentsCount">
+      4 comments
+    </span>
+
+  </div>
+
+
+  <form class="comment-form" id="commentForm">
+
+    <div class="comment-form-row">
+
+      <input type="text"
+             id="commentName"
+             placeholder="Your name"
+             maxlength="40"
+             required>
+
+    </div>
+
+
+    <textarea id="commentText"
+              placeholder="Which world are you watching tonight?"
+              maxlength="400"
+              required></textarea>
+
+
+    <div class="comment-form-foot">
+
+      <span class="comment-form-hint">
+        Be kind — every realm here is someone's favorite.
+      </span>
+
+      <button type="submit"
+              class="btn btn-primary btn-small">
+
+        <i class="fa-solid fa-paper-plane"></i>
+        Post comment
+
+      </button>
+
+    </div>
+
+  </form>
+
+
+  <div class="comment-list" id="commentList">
+    <!-- Filled by JS -->
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+  <svg class="footer-wave"
+       viewBox="0 0 1440 80"
+       preserveAspectRatio="none"
+       aria-hidden="true">
+
+    <path d="M0 40 C 240 90, 480 0, 720 40
+             C 960 80, 1200 0, 1440 40
+             L1440 80 L0 80 Z"
+          fill="#150C29"/>
+
+  </svg>
+
+
+  <div class="footer-inner">
+
+    <a href="#" class="brand footer-brand">
+
+      <svg class="brand-mark"
+           viewBox="0 0 40 40"
+           width="26"
+           height="26"
+           aria-hidden="true">
+
+        <circle cx="20"
+                cy="20"
+                r="17"
+                fill="none"
+                stroke="#E8B85C"
+                stroke-width="2.5"/>
+
+        <path d="M24 8 A14 14 0 1 0 24 32
+                 A11 11 0 1 1 24 8 Z"
+              fill="#E8B85C"/>
+
+      </svg>
+
+      <span>
+        Lumora
+      </span>
+
+    </a>
+
+
+    <ul class="footer-links">
+
+      <li>
+        <a href="#shows">Shows</a>
+      </li>
+
+      <li>
+        <a href="#characters">Characters</a>
+      </li>
+
+      <li>
+        <a href="#episodes">Episodes</a>
+      </li>
+
+      <li>
+        <a href="#comments">Comments</a>
+      </li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+    </ul>
+
+
+    <div class="footer-social">
+
+      <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="#" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a href="#" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <p class="footer-fine">
+    Lumora is a fictional channel created for design purposes.
+    All worlds, characters, and episodes are original concepts
+    and not affiliated with any real network.
+  </p>
+
+</footer>
+
+
+<!-- =========================================================
+     VIDEO MODAL
+========================================================= -->
+
+<div class="modal"
+     id="videoModal"
+     aria-hidden="true">
+
+  <div class="modal-backdrop"
+       data-close-modal>
+  </div>
+
+
+  <div class="modal-panel"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="modalTitle">
+
+
+    <button class="modal-close"
+            data-close-modal
+            aria-label="Close">
+
+      <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+
+    <div class="modal-screen">
+
+      <video id="modalVideo" class="modal-video" controls playsinline preload="metadata"
+             aria-label="Lumora trailer video">
+        Your browser does not support HTML5 video.
+      </video>
+
+    </div>
+
+
+    <h3 id="modalTitle">
+      Emberfall Chronicles — Ep. 12
+    </h3>
+
+
+    <p id="modalSub">
+      The Final Ember · 24 min
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
